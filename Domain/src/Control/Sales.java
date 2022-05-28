@@ -137,7 +137,8 @@ public class Sales {
 		contract.setCustomerId(customer.getId());
 		contract.setInsuranceId(insuranceId);
 		contract.setPremiumRate(this.insuranceList.get(insuranceId).getPremium());
-		contract.setInsurancePrice(this.calculatePremium.calculatePremium(customer, this.insuranceList.get(insuranceId).getPremium()));
+		contract.setInsurancePrice(
+				(int) this.calculatePremium.calculatePremium(customer, this.insuranceList.get(insuranceId).getPremium()));
 
 		this.contractList.add(contract);
 	}

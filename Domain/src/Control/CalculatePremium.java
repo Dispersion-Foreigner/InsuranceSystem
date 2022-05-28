@@ -4,5 +4,5 @@ import Customer.Customer;
 
 public interface CalculatePremium {
 
-    public int calculatePremium(Customer customer, int premiumRate);
+    public double calculatePremium(Customer customer, int premiumRate);
 }
